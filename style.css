@@ -1,0 +1,105 @@
+/*
+Theme Name: Base
+Theme URI: http://www.dijitul.com
+Description: 'BaseResponsive' is a starter theme for WordPress developed by @benbuildsstuff from Dijitul. The theme has no html mark up at all and only includes a simple set of media queries. 
+Author: Dijitul
+Author URI: http://www.dijitul.com
+Version: 1.0
+*/
+/*
+Notes: Don't cross the streams
+*/
+
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ===========================
+		End of Reset
+=========================== */
+
+/* ===================================================================
+		Below is a simple set of CSS declarations. They are simply
+		to demonstrate the responsive layout of this version of Base.
+		Add your own grid, alter the styles here as you will. 
+==================================================================== */
+
+.body {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.header, .footer {
+	width: 100%;
+	padding: 50px 0;
+}
+.page-left {
+	float: left;
+	width: 70%;
+	margin-right: 2%;
+}
+.page-right {
+	float: right;
+	width: 27%;
+}
+.footer {
+	clear: both;
+}
+
+@media screen and (max-width: 768px) {
+.paga-left, 
+.page-right {
+	float: left;
+	clear: both;	
+}
+.page-right {
+	margin-top: 30px;
+}
+}
