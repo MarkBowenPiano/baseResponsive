@@ -8,12 +8,14 @@ Template Name: Custom Post Type Template
 
 	<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?><!-- Post Loop Breadcrumbs -->
 
-	<?php if (have_posts()) : ?>
-			
-    <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-	query_posts('post_type=*Custom_Post_Type*&posts_per_page=10&paged='. $paged ); ?>
-
-	<?php while (have_posts()) : the_post(); ?>
+	<?php
+    $query_args = array(
+    'post_type' => '*Custom_Post_Type*',
+    'posts_per_page' => 3
+    );
+    $loop = new WP_Query($query_args);
+    while($loop->have_posts()) : $loop->the_post();
+	?>
 	<!-- Start of the WordPress Custom Loop
 	Replace the *Custom_Post_Type* with the name of your Custom Post Type -->
 	
@@ -22,8 +24,6 @@ Template Name: Custom Post Type Template
 	<?php the_excerpt(); ?><!-- Post Excerpt -->
 
     <?php endwhile; ?>
-	<?php else: ?>
-	<?php endif; ?><!-- end of WordPress loop -->
 
 	<?php get_sidebar(); ?><!-- WordPress Sidebar -->
 
