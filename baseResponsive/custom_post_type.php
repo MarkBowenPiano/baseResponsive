@@ -6,6 +6,8 @@ Template Name: Custom Post Type Template
 
 <?php get_header(); ?>
 
+	<section class="page-left">
+
 	<?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?><!-- Post Loop Breadcrumbs -->
 
 	<?php
@@ -25,6 +27,12 @@ Template Name: Custom Post Type Template
 
     <?php endwhile; ?>
 
+    </section><!-- page-left -->
+
+    <aside class="page-right">
+
 	<?php get_sidebar(); ?><!-- WordPress Sidebar -->
+
+	</aside><!-- page-right -->
 
 <?php get_footer(); ?>
