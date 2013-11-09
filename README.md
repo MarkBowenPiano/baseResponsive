@@ -23,3 +23,10 @@ Like Base, baseResponsive includes,
 - A simple 404 template.
 - A custom post type template with an easily customizable query loop. 
 
+For a more advanced version of Base with a built in Theme Option's Panel see below:
+
+<a href="https://github.com/benbuildsstuff/BaseStandard" title="BaseStandard">BaseStandard</a>
+
+For the basic version of Base, see below:
+
+<a href="https://github.com/benbuildsstuff/Base" title="Base">Base</a>
