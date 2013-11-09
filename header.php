@@ -46,10 +46,6 @@
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-	<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-	
-	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
